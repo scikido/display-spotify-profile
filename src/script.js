@@ -21,7 +21,7 @@ export async function redirectToAuthCodeFlow(clientId) {
   params.append("response_type", "code");
   params.append(
     "redirect_uri",
-    "https://display-spotify-profile-777.vercel.app/"
+    "https://display-spotify-profile-777.vercel.app/callback"
   );
   params.append("scope", "user-read-private user-read-email");
   params.append("code_challenge_method", "S256");
@@ -59,7 +59,7 @@ export async function getAccessToken(clientId, code) {
   params.append("code", code);
   params.append(
     "redirect_uri",
-    "https://display-spotify-profile-777.vercel.app/"
+    "https://display-spotify-profile-777.vercel.app/callback"
   );
   params.append("code_verifier", verifier);
 
