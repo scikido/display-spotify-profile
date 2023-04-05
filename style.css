@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+background-color: aqua;
+}
+
+.cent{
+  font-family: monospace;
+  border: solid brown;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  background: #000;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid rgb(0, 0, 0);
+  text-align: center;
+}
